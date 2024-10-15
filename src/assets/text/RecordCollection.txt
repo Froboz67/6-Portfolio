@@ -1,0 +1,1 @@
+A dynamic web application that allows users to save and organize their personal record library into custom collections. The project leverages a Java and Spring Boot backend with PostgreSQL for data management, while the front end is built with Vue.js, providing an intuitive interface for users to manage their record collections efficiently.

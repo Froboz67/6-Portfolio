@@ -1,0 +1,9 @@
+This application generates and displays a 20th-century 12-tone serial matrix, allowing users to interact with it directly through the interface. The app integrates the WebAudio API to produce sine wave tones corresponding to each pitch in the matrix. The matrix logic is implemented using JavaScript on the front end, while users can save and load custom matrix patterns via a robust backend built with Java and PostgreSQL.
+
+
+
+
+
+
+
+

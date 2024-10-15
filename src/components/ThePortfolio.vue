@@ -2,9 +2,14 @@
   <div class="container">
     <div class="card">
       <div class="text-content">
-        <h2 class="title">
-          <a :href="htmlUrl" target="_blank">{{ title }}</a>
-        </h2>
+        <h4 class="title">
+          <button class="title-button">
+            <a :href="htmlUrl" target="_blank" class="button-link">
+              <span>{{ title }}</span>
+              <span>GitHub</span>
+            </a>
+          </button>
+        </h4>
         <p class="description">{{ description }}</p>
       </div>
       <div class="image">
@@ -73,7 +78,16 @@ export default {
   justify-content: center;
   padding: 10px;
 }
-
+.title-button {
+  background-color: #005f73;
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+}
+.button-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 a {
   color: white;
   text-decoration: none;
@@ -82,8 +96,7 @@ a:hover {
   color: #ee9b00;
 }
 .title {
-  text-align: left;
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px;
 }
 

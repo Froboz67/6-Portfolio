@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      data: null,
+      data: [],
     };
   },
   created() {
@@ -34,7 +34,8 @@ export default {
           project.name === "RecordCollection" ||
           project.name === "FullStackToneRow" ||
           project.name === "RegionalWeather" ||
-          project.name === "Joke-a-Quote-a-Day"
+          project.name === "Joke-a-Quote-a-Day" ||
+          project.name === "Portfolio"
         );
       });
     });

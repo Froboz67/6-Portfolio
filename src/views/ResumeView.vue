@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Resume View</h2>
+    <h2>Resume</h2>
     <embed :src="resume" />
   </div>
 </template>

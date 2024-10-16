@@ -33,7 +33,8 @@ export default {
         return (
           project.name === "RecordCollection" ||
           project.name === "FullStackToneRow" ||
-          project.name === "RegionalWeather"
+          project.name === "RegionalWeather" ||
+          project.name === "Joke-a-Quote-a-Day"
         );
       });
     });
@@ -44,6 +45,9 @@ export default {
 
 
 <style scoped>
+h2 {
+  text-align: center;
+}
 .repos {
   display: grid;
   grid-template-columns: 1fr 1fr;

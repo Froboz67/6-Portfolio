@@ -35,7 +35,8 @@ export default {
           project.name === "FullStackToneRow" ||
           project.name === "RegionalWeather" ||
           project.name === "Joke-a-Quote-a-Day" ||
-          project.name === "Portfolio"
+          project.name === "Portfolio" ||
+          project.name === "DiceRollGames"
         );
       });
     });

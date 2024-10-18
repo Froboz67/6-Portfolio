@@ -4,12 +4,11 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <header>
-    <h1 class="title">Kevin Engel</h1>
+    <h1 class="title">Kevin Engel - Full Stack Developer</h1>
     <nav>
       <RouterLink to="/">Home</RouterLink> |
-      <!-- <RouterLink to="/about">About</RouterLink> | -->
-      <RouterLink :to="{ name: 'resume' }">Resume</RouterLink> |
-      <RouterLink :to="{ name: 'portfolio' }">Portfolio</RouterLink>
+      <RouterLink :to="{ name: 'portfolio' }">Projects</RouterLink> |
+      <RouterLink :to="{ name: 'resume' }">Resume</RouterLink>
     </nav>
   </header>
 
@@ -18,7 +17,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <style>
 body {
-  background-color: white;
+  background-color: #1b1027;
 }
 
 nav {
@@ -31,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ee9b00;
+  color: #271f42;
 }
 RouterLink {
   color: white;
@@ -49,7 +48,7 @@ header {
   max-height: 100vh;
   display: flex;
   justify-content: space-between;
-  background-color: #001219;
+  background-color: #3a334d;
   border-radius: 5px;
 }
 </style>

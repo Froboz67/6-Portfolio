@@ -13,7 +13,7 @@ description: I have a keen eye for recognizing the strengths in others and am at
 title: Impactful
 description: My enthusiasm and commitment have consistently driven significant increases in participation and have enhanced the reputation of every organization in which I have been involved.
 
-title: resourceful
+title: Resourceful
 description: By integrating innovative technology into my projects, I have transformed the user experience, empowering teams to engage deeply and achieve greater success.
 
 

@@ -29,15 +29,14 @@ export default {
   },
   created() {
     githubService.getRepos().then((response) => {
-      console.log(response);
       this.data = response.data.filter((project) => {
         return (
-          project.name === "RecordCollection" ||
-          project.name === "FullStackToneRow" ||
-          project.name === "RegionalWeather" ||
-          project.name === "Joke-a-Quote-a-Day" ||
-          project.name === "Portfolio" ||
-          project.name === "DiceRollGames"
+          project.name === "2-RecordCollection" ||
+          project.name === "4-FullStackToneRow" ||
+          project.name === "1-RegionalWeather" ||
+          project.name === "3-Joke-a-Quote-a-Day" ||
+          project.name === "6-Portfolio" ||
+          project.name === "5-DiceRollGames"
         );
       });
     });

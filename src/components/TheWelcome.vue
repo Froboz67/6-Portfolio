@@ -55,14 +55,16 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="../assets/images/RegionalWeather.png" alt="RegionalWeather"
+          <img
+            src="../assets/images/1-RegionalWeather.png"
+            alt="RegionalWeather"
         /></a>
         <a
           href="https://joke-a-quote-a-day.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="../assets/images/Joke-a-Quote-a-Day.png" alt="Jokes"
+          <img src="../assets/images/3-Joke-a-Quote-a-Day.png" alt="Jokes"
         /></a>
       </div>
     </div>
@@ -157,10 +159,16 @@ export default {
 }
 .skill-list {
   font-size: 12px;
+  color: white;
 }
-.title,
 .description {
   font-size: 14px;
+  margin-bottom: 0;
+}
+.title {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0;
 }
 .head-shot {
   padding-bottom: 15px;

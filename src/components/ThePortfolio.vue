@@ -5,7 +5,7 @@
         <h4 class="title">
           <button class="title-button">
             <a :href="htmlUrl" target="_blank" class="button-link">
-              <span>{{ title }}</span>
+              <span>{{ title.slice(2) }}</span>
               <span>GitHub</span>
             </a>
           </button>

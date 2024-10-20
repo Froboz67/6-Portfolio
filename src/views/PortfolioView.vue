@@ -7,8 +7,9 @@
           :title="project.name"
           :htmlUrl="project.html_url"
           :id="project.id"
-          :index="index"
+          :index="index"          
         ></repo-component>
+        
       </div>
     </div>
   </div>
@@ -34,7 +35,7 @@ export default {
         return (
           project.name === "RecordCollection" ||
           project.name === "FullStackToneRow" ||
-          project.name === "RegionalWeather" ||
+          project.name === "1-RegionalWeather" ||
           project.name === "Joke-a-Quote-a-Day" ||
           project.name === "Portfolio" ||
           project.name === "DiceRollGames"
@@ -107,8 +108,7 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
-  .image {
-    /* flex: 2; */
+  .image {    
     display: flex;
     justify-content: center;
     align-items: center;

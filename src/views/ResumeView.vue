@@ -20,7 +20,7 @@ export default {
   
 <style>
 iframe {
-  width: 100vw;
+  width: 100%;
   height: 80vh;
 }
 </style>

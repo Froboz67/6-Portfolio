@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Resume</h2>
-    <embed :src="resume" />
+    <iframe :src="resume" type="application/pdf"></iframe>
   </div>
 </template>
   
@@ -19,8 +19,8 @@ export default {
   
   
 <style>
-embed {
-  width: 100%;
+iframe {
+  width: 100vw;
   height: 80vh;
 }
 </style>

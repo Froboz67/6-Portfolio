@@ -62,8 +62,26 @@ header {
   max-height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   background-color: #3a334d;
   border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    padding-top: 10;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+  nav li {
+    margin: 5px 0;
+  }
 }
 </style>

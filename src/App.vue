@@ -38,15 +38,17 @@ nav a {
 nav a:hover {
   color: #271f42;
 }
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 25px;
-}
 RouterLink {
   color: white;
   text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+nav li {
+  margin: 0;
 }
 
 .title {
@@ -55,15 +57,13 @@ RouterLink {
 }
 
 header {
-  position: fixed;
   line-height: 1.5;
   width: 100%;
   max-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background-color: #3a334d;
   border-radius: 5px;
-  z-index: 1000;
 }
 </style>

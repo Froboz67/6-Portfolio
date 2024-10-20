@@ -140,11 +140,12 @@ export default {
   background-color: #3d1f77;
 }
 .grid-container {
-  padding-top: 80px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   gap: 20px;
   margin: 0;
+  width: 100%;
 }
 .skills,
 .projects {
@@ -152,9 +153,6 @@ export default {
   background-color: #3d1f77;
   padding: 20px;
   border-radius: 5px;
-  position: sticky;
-  top: 20px;
-  height: fit-content;
 }
 .projects {
   grid-column: 3;
@@ -182,8 +180,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* overflow: auto;
-  max-height: 80vh; */
 }
 .bio-objects {
   color: white;
@@ -212,13 +208,13 @@ img {
   margin-top: 10px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* This will stack all columns into one */
   }
 
   .projects {
-    grid-column: auto;
+    grid-column: auto; /* Resetting grid-column to auto to allow stacking */
   }
   .bio {
     order: 1;

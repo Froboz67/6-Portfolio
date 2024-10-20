@@ -13,7 +13,7 @@
         <p class="description">{{ description }}</p>
       </div>
       <div class="image">
-        <img :src="getImage" alt="image" />
+        <img :src="getImage" :alt="`${title} project screenshot`" />
       </div>
     </div>
   </div>

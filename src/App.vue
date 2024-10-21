@@ -62,7 +62,6 @@ header {
   max-height: 100vh;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   background-color: #3a334d;
   border-radius: 5px;
 }
@@ -74,11 +73,23 @@ header {
     align-items: center;
   }
   nav {
+    display: flex;
+    justify-content: center;
     padding-top: 10;
+    width: 100%;
   }
   nav ul {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  ul {
+    align-items: center;
   }
   nav li {
     margin: 5px 0;

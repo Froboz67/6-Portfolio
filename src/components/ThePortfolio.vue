@@ -131,20 +131,32 @@ img {
   height: 250px;
   border: solid 3px;
   border-color: #3d1f77;
+  border-radius: 7px;
 }
 
 @media (max-width: 590px) {
   .card {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    justify-items: center;
   }
   .image {
-    /* flex: 2; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    order: 2;
+  }
+  .text-content {
+    order: 3;
+  }
+  .title {
     order: 1;
+    justify-content: center;
+  }
+  .reverse .title {
+    order: 1;
+    justify-content: center;
   }
 }
 </style>

@@ -49,7 +49,6 @@ export default {
       fetch(url)
         .then((response) => response.text())
         .then((data) => {
-          console.log(data);
           this.description = data;
         })
         .catch((error) => {

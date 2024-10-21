@@ -47,6 +47,9 @@ export default {
 
 
 <style scoped>
+h2 {
+  padding-top: 20px;
+}
 .container {
   display: grid;
   gap: 20px;

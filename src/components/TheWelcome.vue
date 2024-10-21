@@ -30,6 +30,31 @@
     </div>
 
     <div class="bio">
+      <div class="bio-header">
+        <RouterLink id="project" :to="{ name: 'portfolio' }">
+          <h3 id="project-route">Projects</h3>
+          <div class="tile-container">
+            <img
+              src="../assets/images/1-RegionalWeather.png"
+              alt="WeatherApp"
+            />
+            <img
+              src="../assets/images/2-RecordCollection.png"
+              alt="WeatherApp"
+            />
+            <img
+              src="../assets/images/3-Joke-a-Quote-a-Day.png"
+              alt="WeatherApp"
+            />
+            <img
+              src="../assets/images/4-FullStackToneRow.png"
+              alt="WeatherApp"
+            />
+            <img src="../assets/images/5-DiceRollGames.png" alt="WeatherApp" />
+            <img src="../assets/images/6-Portfolio.png" alt="WeatherApp" />
+          </div>
+        </RouterLink>
+      </div>
       <img
         class="head-shot"
         src="../assets/images/EngelHeadShot-TE.jpg"
@@ -131,6 +156,29 @@ export default {
 </script>
 
 <style scoped>
+.bio-header {
+  padding: 10px;
+  width: 100%;
+  background-color: #3d1f77;
+  justify-content: center;
+}
+.tile-container {
+  display: flex;
+  justify-content: space-around;
+}
+.tile-container img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+#project {
+  text-decoration: none;
+  color: white;
+}
+#project-route {
+  display: flex;
+  justify-content: center;
+}
 .bio-text {
   grid-column: 2;
   display: flex;

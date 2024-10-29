@@ -1,35 +1,15 @@
 # portfolio-app
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to my portfolio project.
 
-## Recommended IDE Setup
+# techonologies
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+The application was created with Vue.js using Visual Studio Code
 
-## Customize configuration
+# purpose
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+The purpose of this project is to showcase my professional growth as a software 
+developer and showcase the work I have completing since I have graduated from
+the full stack Java bootcamp through Tech Elevator Cincinnati.
 
-## Project Setup
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```

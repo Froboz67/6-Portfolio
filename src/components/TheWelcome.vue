@@ -10,12 +10,11 @@
         <li>JavaScript</li>
         <li>Spring Boot</li>
         <li>JDBC</li>
-        <li>Table Design</li>
         <li>SQL</li>
         <li>PostgreSQL</li>
-        <li>E/R diagrams</li>
-        <li>Unit Testing (JUnit)</li>
-        <li>VUE.js</li>
+        <li>Trello</li>
+        <li>Agile</li>
+        <li>Vue.js</li>
         <li>Git</li>
         <li>GitHub</li>
         <li>IntelliJ</li>

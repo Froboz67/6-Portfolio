@@ -200,12 +200,13 @@ export default {
   background-color: #3d1f77;
   padding: 20px;
   border-radius: 5px;
+  justify-items: left;
 }
 .projects {
   grid-column: 3;
 }
 .skill-list {
-  font-size: 12px;
+  font-size: 18px;
   color: white;
 }
 .description {

@@ -75,7 +75,7 @@
       <h4>Examples</h4>
       <div class="project-images">
         <a
-          href="https://regional-weather.netlify.app/"
+          href="https://regional-weather-v2.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >

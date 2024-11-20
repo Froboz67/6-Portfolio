@@ -31,12 +31,13 @@ export default {
     githubService.getRepos().then((response) => {
       this.data = response.data.filter((project) => {
         return (
-          project.name === "2-RecordCollection" ||
-          project.name === "4-FullStackToneRow" ||
-          project.name === "1-RegionalWeather" ||
-          project.name === "3-Joke-a-Quote-a-Day" ||
-          project.name === "6-Portfolio" ||
-          project.name === "5-DiceRollGames"
+          project.name === "1-SpotifyAPI" ||
+          project.name === "3-RecordCollection" ||
+          project.name === "5-FullStackToneRow" ||
+          project.name === "2-RegionalWeather" ||
+          project.name === "4-Joke-a-Quote-a-Day" ||
+          project.name === "7-Portfolio" ||
+          project.name === "6-DiceRollGames"
         );
       });
     });

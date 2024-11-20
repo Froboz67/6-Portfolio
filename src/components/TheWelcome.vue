@@ -34,23 +34,23 @@
           <h3 id="project-route">Projects</h3>
           <div class="tile-container">
             <img
-              src="../assets/images/1-RegionalWeather.png"
+              src="../assets/images/2-RegionalWeather.png"
               alt="WeatherApp"
             />
             <img
-              src="../assets/images/2-RecordCollection.png"
+              src="../assets/images/3-RecordCollection.png"
               alt="WeatherApp"
             />
             <img
-              src="../assets/images/3-Joke-a-Quote-a-Day.png"
+              src="../assets/images/4-Joke-a-Quote-a-Day.png"
               alt="WeatherApp"
             />
             <img
               src="../assets/images/4-FullStackToneRow.png"
               alt="WeatherApp"
             />
-            <img src="../assets/images/5-DiceRollGames.png" alt="WeatherApp" />
-            <img src="../assets/images/6-Portfolio.png" alt="WeatherApp" />
+            <img src="../assets/images/6-DiceRollGames.png" alt="WeatherApp" />
+            <img src="../assets/images/7-Portfolio.png" alt="WeatherApp" />
           </div>
         </RouterLink>
       </div>
@@ -74,13 +74,19 @@
     <div class="projects">
       <h4>Examples</h4>
       <div class="project-images">
+        <div class="video">
+          <video controls autoplay loop muted>
+            <source :src="spotifyVid" type="video/mp4" />
+            Your browser does not support video tag.
+          </video>
+        </div>
         <a
           href="https://regional-weather-v2.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="../assets/images/1-RegionalWeather.png"
+            src="../assets/images/2-RegionalWeather.png"
             alt="RegionalWeather"
         /></a>
         <a
@@ -88,7 +94,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="../assets/images/3-Joke-a-Quote-a-Day.png" alt="Jokes"
+          <img src="../assets/images/4-Joke-a-Quote-a-Day.png" alt="Jokes"
         /></a>
       </div>
     </div>
@@ -97,6 +103,8 @@
 
 
 <script>
+import videoFile from "../assets/images/1-spotify-project.mp4";
+
 export default {
   data() {
     return {
@@ -104,6 +112,7 @@ export default {
       bioObjects: [],
       title: "",
       description: "",
+      spotifyVid: videoFile,
     };
   },
   created() {
@@ -249,6 +258,13 @@ export default {
   height: auto;
   border-radius: 5px;
   filter: opacity(40%);
+}
+.video video {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  display: block;
+  border: 1px solid white;
 }
 img {
   height: 200px;

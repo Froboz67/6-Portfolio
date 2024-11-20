@@ -6,7 +6,7 @@
 </template>
   
   <script>
-import pdf from "../assets/kevin_engel_resume_10-29_v4.pdf";
+import pdf from "../assets/kevin_engel_11_24.pdf";
 
 export default {
   data() {

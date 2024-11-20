@@ -1,0 +1,2 @@
+This is a Java CLI application that solves the problem of rolling dice. Selections may be made for any quantity of six sided dice. The user can also choose to challenge the computer to a game of Blackjack - 21.
+

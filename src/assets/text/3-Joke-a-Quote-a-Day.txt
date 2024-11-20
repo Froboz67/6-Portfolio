@@ -1,3 +1,0 @@
-Welcome to my super fun and cheerful app, built with the Vue.js framework! This app taps into three different API services to deliver exactly what you never knew you needed: Random Quotes, Random Facts, and (of course) Random Dad Jokes. It's like a little box of surprises for your day!
-
-The design is responsive, using Bootstrap for a clean, mobile-friendly layout that looks just as good on larger screens. Whether you're on the go or relaxing at your desk, this app ensures you're always just one click away from a random chuckle, an insightful quote, or a fun fact that might (or might not) come in handy!

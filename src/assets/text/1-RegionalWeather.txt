@@ -1,2 +1,0 @@
-This Vue.js application leverages the National Weather Service API to deliver a seven-day weather forecast for four U.S. regions: Cincinnati, Ohio; Athens, Ohio; Portland, Oregon; and Tucson, Arizona. The app provides users with a simple, intuitive interface to view regional weather data, with dynamic updates for each location. Additionally, it integrates with the RCC-ACIS API to display the record high and low temperatures for the current day at each location.
-

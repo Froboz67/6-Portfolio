@@ -1,0 +1,3 @@
+Dive into the world of music with this dynamic web application that lets users save and organize their personal record libraries into custom collections! Whether you're a casual listener or a dedicated audiophile, this project makes it easy to celebrate your love for vintage vinyl. Built as a final capstone project in a collaborative coding bootcamp, the development process included daily standups and agile methodologies to ensure effective teamwork.
+
+The app features a robust Java and Spring Boot backend, along with PostgreSQL for seamless data management. The front end is crafted with Vue.js to provide an intuitive and enjoyable interface. Explore, curate, and showcase your favorite records with ease!

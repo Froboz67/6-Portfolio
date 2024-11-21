@@ -54,6 +54,7 @@ nav li {
 .title {
   color: white;
   padding: 20px;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
 
 header {

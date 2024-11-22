@@ -46,7 +46,7 @@
               alt="WeatherApp"
             />
             <img
-              src="../assets/images/4-FullStackToneRow.png"
+              src="../assets/images/5-FullStackToneRow.png"
               alt="WeatherApp"
             />
             <img src="../assets/images/6-DiceRollGames.png" alt="WeatherApp" />

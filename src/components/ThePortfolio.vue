@@ -51,6 +51,7 @@ export default {
     htmlUrl: String,
     id: Number,
     index: Number,
+    // adding comment so I can revommit
   },
   computed: {
     getImage() {

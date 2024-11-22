@@ -9,11 +9,28 @@
               <span>GitHub</span>
             </a>
           </button>
+          <button
+            v-if="videoCheckCompleted && videoExists"
+            class="title-button"
+            @click="playVideo"
+          >
+            <a target="" class="button-link">
+              <span>Play Video</span>
+            </a>
+          </button>
         </h4>
         <p class="description">{{ description }}</p>
       </div>
       <div class="image">
         <img :src="getImage" :alt="`${title} project screenshot`" />
+      </div>
+    </div>
+    <div v-if="showVideo" class="modal" @click.self="closeVideo">
+      <div class="modal-content">
+        <video controls autoplay>
+          <source :src="videoUrl" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
@@ -24,6 +41,9 @@ export default {
   data() {
     return {
       description: "",
+      showVideo: false,
+      videoExists: false,
+      videoCheckCompleted: false,
     };
   },
   props: {
@@ -39,11 +59,24 @@ export default {
     isReverse() {
       return this.index % 2 !== 0;
     },
+    videoUrl() {
+      const url = new URL(`../assets/images/${this.title}.mp4`, import.meta.url)
+        .href;
+      return url;
+    },
   },
   created() {
+    console.log("Title prop: ", this.title);
     this.fetchDescription();
+    this.checkVideoExists();
   },
   methods: {
+    playVideo() {
+      this.showVideo = true;
+    },
+    closeVideo() {
+      this.showVideo = false;
+    },
     fetchDescription() {
       const url = new URL(`../assets/text/${this.title}.txt`, import.meta.url);
       fetch(url)
@@ -55,11 +88,39 @@ export default {
           console.log.error("problem fetching description", error);
         });
     },
+    checkVideoExists() {
+      const availableVideos = ["1-SpotifyAPI.mp4"]; // Add all existing video file names here DON'T FORGET THE COMMA!!!!
+
+      this.videoExists = availableVideos.includes(`${this.title}.mp4`);
+      this.videoCheckCompleted = true;
+    },
   },
 };
 </script>
 
 <style scoped>
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content video {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.modal-content {
+  position: relative;
+}
 .container {
   display: grid;
   gap: 20px;
@@ -133,7 +194,7 @@ img {
   border-radius: 7px;
 }
 
-@media (max-width: 590px) {
+@media (max-width: 800px) {
   .card {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;

@@ -103,7 +103,7 @@
 
 
 <script>
-import videoFile from "../assets/images/1-spotify-project.mp4";
+import videoFile from "../assets/images/1-SpotifyAPI.mp4";
 
 export default {
   data() {

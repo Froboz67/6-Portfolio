@@ -18,6 +18,11 @@
               <span>Play Video</span>
             </a>
           </button>
+          <button v-if="appExists" class="title-button">
+            <a :href="appUrl" target="_blank" rel="noopener noreferrer">
+              <span>Try App</span>
+            </a>
+          </button>
         </h4>
         <p class="description">{{ description }}</p>
       </div>
@@ -44,6 +49,8 @@ export default {
       showVideo: false,
       videoExists: false,
       videoCheckCompleted: false,
+      appExists: false,
+      appCheckCompleted: false,
     };
   },
   props: {
@@ -51,7 +58,6 @@ export default {
     htmlUrl: String,
     id: Number,
     index: Number,
-    // adding comment so I can revommit
   },
   computed: {
     getImage() {
@@ -67,9 +73,10 @@ export default {
     },
   },
   created() {
-    console.log("Title prop: ", this.title);
+    // makes sure all the data is loaded before the DOM is created
     this.fetchDescription();
     this.checkVideoExists();
+    this.checkAppExists();
   },
   methods: {
     playVideo() {
@@ -90,10 +97,25 @@ export default {
         });
     },
     checkVideoExists() {
+      // hard coded array for video files
       const availableVideos = ["1-SpotifyAPI.mp4"]; // Add all existing video file names here DON'T FORGET THE COMMA!!!!
-
       this.videoExists = availableVideos.includes(`${this.title}.mp4`);
       this.videoCheckCompleted = true;
+    },
+    checkAppExists() {
+      // hard coded array for deployed apps
+      const availableApps = [
+        "https://2-regionalweather.netlify.app/",
+        "https://4-joke-a-quote-a-day.netlify.app/",
+      ];
+      const titleLower = this.title.toLowerCase();
+      this.appExists = availableApps.includes(
+        `https://${titleLower}.netlify.app/`
+      );
+      if (this.appExists) {
+        this.appUrl = `https://${titleLower}.netlify.app/`;
+      }
+      this.appCheckCompleted = true;
     },
   },
 };

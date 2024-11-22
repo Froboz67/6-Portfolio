@@ -81,7 +81,7 @@
           </video>
         </div>
         <a
-          href="https://regional-weather-v2.netlify.app/"
+          href="https://2-regionalweather.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -90,7 +90,7 @@
             alt="RegionalWeather"
         /></a>
         <a
-          href="https://joke-a-quote-a-day.netlify.app/"
+          href="https://4-joke-a-quote-a-day.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >

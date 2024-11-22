@@ -31,6 +31,9 @@ export default {
     githubService.getRepos().then((response) => {
       this.data = response.data.filter((project) => {
         return (
+          // When updating titles have to be altered here
+          // also altered in the TheWelcome and ThePortfolio
+          // Don't forget the local folders and GitHub
           project.name === "1-SpotifyAPI" ||
           project.name === "3-RecordCollection" ||
           project.name === "5-FullStackToneRow" ||

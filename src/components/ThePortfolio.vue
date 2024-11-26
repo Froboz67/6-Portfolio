@@ -30,8 +30,9 @@
         <img :src="getImage" :alt="`${title} project screenshot`" />
       </div>
     </div>
-    <div v-if="showVideo" class="modal" @click.self="closeVideo">
+    <div v-if="showVideo" class="modal">
       <div class="modal-content">
+        <span class="close-button" @click="closeVideo">&times;</span>
         <video controls autoplay>
           <source :src="videoUrl" type="video/mp4" />
           Your browser does not support the video tag.
@@ -98,7 +99,7 @@ export default {
     },
     checkVideoExists() {
       // hard coded array for video files
-      const availableVideos = ["1-SpotifyAPI.mp4"]; // Add all existing video file names here DON'T FORGET THE COMMA!!!!
+      const availableVideos = ["1-SpotifyAPI.mp4", "0-HomeInventoryApp.mp4"]; // Add all existing video file names here DON'T FORGET THE COMMA!!!!
       this.videoExists = availableVideos.includes(`${this.title}.mp4`);
       this.videoCheckCompleted = true;
     },
@@ -132,17 +133,42 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 .modal-content video {
-  max-width: 80%;
-  max-height: 80%;
+  width: 100%; /* Make video take full modal-content width */
+  /* height: auto;  */
+  max-height: 100%;
+  object-fit: contain;
   border-radius: 10px;
 }
 
 .modal-content {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: red;
+  cursor: pointer;
+  background: solid red;
+  border: 1px solid red;
+  outline: none;
+  z-index: 1030;
+}
+
+.close-button:hover {
+  color: #ccc; /* Change color on hover */
 }
 .container {
   display: grid;

@@ -76,6 +76,12 @@
       <div class="project-images">
         <div class="video">
           <video controls autoplay loop muted>
+            <source :src="homeInVid" type="video/mp4" />
+            Your browser does not support video tag.
+          </video>
+        </div>
+        <div class="video">
+          <video controls autoplay loop muted>
             <source :src="spotifyVid" type="video/mp4" />
             Your browser does not support video tag.
           </video>
@@ -104,6 +110,7 @@
 
 <script>
 import videoFile from "../assets/images/1-SpotifyAPI.mp4";
+import videoFile2 from "../assets/images/0-HomeInventoryApp.mp4";
 
 export default {
   data() {
@@ -113,6 +120,7 @@ export default {
       title: "",
       description: "",
       spotifyVid: videoFile,
+      homeInVid: videoFile2,
     };
   },
   created() {

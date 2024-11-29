@@ -41,7 +41,8 @@ export default {
           project.name === "4-Joke-a-Quote-a-Day" ||
           project.name === "7-Portfolio" ||
           project.name === "6-DiceRollGames" ||
-          project.name === "0-HomeInventoryApp"
+          project.name === "0-HomeInventoryApp" ||
+          project.name === "0.5-QRCodeGenerator"
         );
       });
     });

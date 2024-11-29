@@ -99,7 +99,11 @@ export default {
     },
     checkVideoExists() {
       // hard coded array for video files
-      const availableVideos = ["1-SpotifyAPI.mp4", "0-HomeInventoryApp.mp4"]; // Add all existing video file names here DON'T FORGET THE COMMA!!!!
+      const availableVideos = [
+        "1-SpotifyAPI.mp4",
+        "0-HomeInventoryApp.mp4",
+        "0.5-QRCodeGenerator.mp4",
+      ]; // Add all existing video file names here DON'T FORGET THE COMMA!!!!
       this.videoExists = availableVideos.includes(`${this.title}.mp4`);
       this.videoCheckCompleted = true;
     },
@@ -201,7 +205,8 @@ export default {
 .title-button {
   background-color: #5d475c;
   border-radius: 10px;
-  padding: 5px 15px 5px 15px;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  margin: 0.5rem;
 }
 .button-link {
   display: flex;

@@ -53,7 +53,7 @@ export default {
 
 
 <style scoped>
-h2 {
+/* h2 {
   padding-top: 20px;
 }
 .container {
@@ -108,15 +108,15 @@ img {
   height: 250px;
   border: solid 3px;
   border-color: #3d1f77;
-}
+} */
 
-@media (max-width: 590px) {
+/* @media (max-width: 590px) {
   .card {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
   .image {
-    /* flex: 2; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,5 +137,5 @@ h2 {
   .repos {
     grid-template-columns: 1fr;
   }
-}
+} */
 </style>

@@ -275,4 +275,17 @@ img {
     justify-content: center;
   }
 }
+@media (max-width: 480px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content,
+  .image {
+    width: 100%;
+    text-align: center;
+  }
+}
 </style>

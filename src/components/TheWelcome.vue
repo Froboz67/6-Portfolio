@@ -45,10 +45,10 @@
               src="../assets/images/4-Joke-a-Quote-a-Day.png"
               alt="WeatherApp"
             />
-            <img
+            <!-- <img
               src="../assets/images/5-FullStackToneRow.png"
               alt="WeatherApp"
-            />
+            /> -->
             <img src="../assets/images/6-DiceRollGames.png" alt="WeatherApp" />
             <img src="../assets/images/7-Portfolio.png" alt="WeatherApp" />
           </div>

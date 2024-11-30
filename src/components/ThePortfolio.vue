@@ -5,7 +5,8 @@
         <h4 class="title">
           <button class="title-button">
             <a :href="htmlUrl" target="_blank" class="button-link">
-              <span>{{ title.slice(2) }}</span>
+              <span v-if="title[1] === '.'">{{ title.slice(4) }}</span>
+              <span v-else>{{ title.slice(2) }}</span>
               <span>GitHub</span>
             </a>
           </button>
@@ -112,6 +113,7 @@ export default {
       const availableApps = [
         "https://2-regionalweather.netlify.app/",
         "https://4-joke-a-quote-a-day.netlify.app/",
+        "https://5-randomtonerowgenerator.netlify.app/",
       ];
       const titleLower = this.title.toLowerCase();
       this.appExists = availableApps.includes(

@@ -36,7 +36,7 @@ export default {
           // Don't forget the local folders and GitHub
           project.name === "1-SpotifyAPI" ||
           project.name === "3-RecordCollection" ||
-          project.name === "5-FullStackToneRow" ||
+          project.name === "5-RandomToneRowGenerator" ||
           project.name === "2-RegionalWeather" ||
           project.name === "4-Joke-a-Quote-a-Day" ||
           project.name === "7-Portfolio" ||

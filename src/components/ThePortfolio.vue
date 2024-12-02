@@ -104,6 +104,7 @@ export default {
         "1-SpotifyAPI.mp4",
         "0-HomeInventoryApp.mp4",
         "0.5-QRCodeGenerator.mp4",
+        "0.6-AudioToText.mp4",
       ]; // Add all existing video file names here DON'T FORGET THE COMMA!!!!
       this.videoExists = availableVideos.includes(`${this.title}.mp4`);
       this.videoCheckCompleted = true;

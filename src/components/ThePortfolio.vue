@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" v-if="title.lastIndexOf('--v')">
     <div class="card" :class="{ reverse: isReverse }">
       <div class="text-content">
         <h4 class="title">

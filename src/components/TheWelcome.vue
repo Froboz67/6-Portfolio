@@ -31,8 +31,12 @@
     <div class="bio">
       <div class="bio-header">
         <RouterLink id="project" :to="{ name: 'portfolio' }">
+          <!-- <PortfolioView v-bind:isVideoViewable="isVideoPresent" /> -->
           <h3 id="project-route">Projects</h3>
-          <div class="tile-container">
+          <button @click="hasVideo">Projects with Video</button>
+          <button>Deployed Projects</button>
+          <button>All Projects</button>
+          <!-- <div class="tile-container">
             <img
               src="../assets/images/2-RegionalWeather.png"
               alt="WeatherApp"
@@ -47,7 +51,7 @@
             />
             <img src="../assets/images/6-DiceRollGames.png" alt="WeatherApp" />
             <img src="../assets/images/7-Portfolio.png" alt="WeatherApp" />
-          </div>
+          </div> -->
         </RouterLink>
       </div>
       <img
@@ -107,8 +111,12 @@
 <script>
 import videoFile from "../assets/images/1-SpotifyAPI.mp4";
 import videoFile2 from "../assets/images/0-HomeInventoryApp.mp4";
+// import PortfolioView from "./ThePortfolio.vue";
 
 export default {
+  components: {
+    // PortfolioView,
+  },
   data() {
     return {
       bio: "",
@@ -117,6 +125,7 @@ export default {
       description: "",
       spotifyVid: videoFile,
       homeInVid: videoFile2,
+      isVideoPresent: false,
     };
   },
   created() {
@@ -162,6 +171,9 @@ export default {
         }
       });
       this.bioObjects = bioObjects;
+    },
+    hasVideo() {
+      this.isVideoPresent = !this.isVideoPresent;
     },
   },
 };

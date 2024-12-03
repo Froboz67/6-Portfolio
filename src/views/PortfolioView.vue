@@ -3,24 +3,28 @@
     <h2>Projects</h2>
     <div class="repos">
       <div class="column" v-for="(project, index) in data" :key="project.id">
-        <repo-component
+        <the-portfolio
           :title="project.name"
           :htmlUrl="project.html_url"
           :id="project.id"
           :index="index"
-        ></repo-component>
+        ></the-portfolio>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import repoComponent from "../components/ThePortfolio.vue";
+import thePortfolio from "../components/ThePortfolio.vue";
 import githubService from "../services/GithubService";
 
 export default {
+  props: {
+    isVideoViewable: Boolean,
+    // required: false,
+  },
   components: {
-    repoComponent,
+    thePortfolio,
   },
   data() {
     return {
@@ -29,6 +33,7 @@ export default {
   },
   created() {
     githubService.getRepos().then((response) => {
+      console.log(response);
       this.data = response.data.filter((project) => {
         return (
           // When updating titles have to be altered here
@@ -46,6 +51,7 @@ export default {
           project.name === "0.6-AudioToText"
         );
       });
+      console.log(this.data);
     });
   },
 };
